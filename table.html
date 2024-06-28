@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection Table</title>
+    <link rel="stylesheet" href="css/tablestyle.css">
+</head>
+
+<body>
+    <h1><EM>WELCOME   TO   COURSE   REGISTRATION</EM></h1>
+    
+
+    <form action="file:///D:/feb/webweb/assignment/tq.html" >
+        <h3>Date & Time: <input type="datetime-local" value="time" required  ></h3>
+
+        <fieldset >
+            <label >ENTER FULL NAME :   <input class=".width" type="text "  required /></label>
+            <label >ENTER   EMAIL-ID :    <input  class=".width" type="email" required  /></label>
+            <label >ENTER CELL-NUMBER : <input  class=".width" type="number" required /></label>
+        </fieldset>
+    <table  width="100%" >
+        <tr>
+            <th rowspan="3"><label> DAY </label> </th>
+            <th colspan="4"><label> SEMINAR </label> </th>
+
+        </tr>
+        <tr>
+
+            <th colspan="2"><label> SCHEDULE</label> </th>
+            <th rowspan="2" width="50%"><label> TOPIC</label> </th>
+        </tr>
+        <tr>
+            
+            <th><label> BEGIN </label> </th>
+            <th><label> END </label> </th>
+
+        </tr>
+        <tr>
+            <td rowspan="2">Monday
+                <input type="checkbox" required>
+            </td>
+            <td rowspan="2"> 8:00am </td>
+            <td rowspan="2"> 5:00pm </td>
+            <td>Introduction to HTML
+                <img src="css/images/HTML5_Logo_512.png" width="30px">
+                <input type="radio" name="tech" value="h" >
+            </td>
+
+        </tr>
+        <tr>
+            <td>Introduction to CSS
+                <img src="css/images/CSS3_logo_and_wordmark.svg" width="30px">
+                <input type="radio" name="tech" value="c">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday
+                <input type="checkbox" required>
+            </td>
+            <td>8:00am</td>
+            <td>11:00am</td>
+            <td rowspan="3">Angular & React js
+                <img src="css/images/AngularJS-Shield.svg" width="30px">
+                <img src="css/images/React.webp" width="30px">
+                <input type="checkbox" required>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>11:00am</td>
+            <td>2:00pm</td>
+
+        </tr>
+        <tr>
+            <td>2:00pm</td>
+            <td>5:00pm</td>
+        </tr>
+        <tr></tr>
+
+    </table>
+<div ><h6><input  type="checkbox"  required/>I accept the terms & conditions.</h6></div>
+<input type="reset">
+ <input type="submit" >
+</form>
+
+</body>
+
+</html>

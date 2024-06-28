@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="bbotstrap.js/boot.js">
+
+    </script>
+    <script type="text/javascript"> 
+
+    function myfun(){
+        var Fname=document.getElementById('Fname').value;
+        var Lname=document.getElementById('Lname').value;
+        var Email=document.getElementById('email-id').value;
+        var mobile=document.getElementById('number').value;
+        var Gender=document.getElementById('gender').value;
+        var DOB=document.getElementById('DOB').value;
+        var Address=document.getElementById('address').value;
+        var Hobbies=document.getElementById('C').value;
+        var Qualification=document.getElementById('Q').value;
+        let text="Name :"+Fname +Lname +","+"Email-id :"+Email+","+"mobile :"+mobile+","+"Gender :"+Gender+","+"DOB :"+DOB +","+"Address :"+Address+","+"Hobbies :"+Hobbies+","+"Qualification :"+ Qualification;
+
+       alert(text);
+
+        // alert("Name :"+Fname +Lname );
+        // alert("Email-id :"+Email );
+
+        // alert("mobile :"+number);
+        // alert("Gender :"+gender);
+        // alert("DOB :"+DOB );
+        // alert("Address :"+Address);
+        // alert("Hobbies :"+Hobbies);
+        // alert("Qualification :"+ Qualification);
+
+
+    }
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1> WELCOME TO REGISTRATION FORM</h1>
+    <h2 type="time" id="time" ></h2>
+    <form action="">
+        <div><label>FIRST NAME</label>
+            <input type="text" id="Fname" placeholder="eg:sachin" autocomplete="off">
+        </div>
+        <div><label>LAST NAME</label>
+            <input type="text" id="Lname" placeholder="eg:Sharma">
+        </div>
+        <div><label>EMAIL-ID</label>
+            <input type="text" id="email-id" placeholder="eg:sachin@gmail.com">
+        </div>
+        <div><label>MOBILE-NUMBER</label>
+            <input type="number" id="number" placeholder="eg:9448352352">
+        </div>
+        <div> <label>GENDER </label>
+            <input type="radio" id="gender" value="M">Male
+            <input type="radio" id="gender" value="F">female
+            <input type="radio" id="gender" value="X">others
+        </div>
+
+        <div><label>DATE OF BIRTH </label>
+            <input type="date" id="DOB">
+        </div>
+        <div><label>ADDRESS</label>
+            <div> <textarea name="address" id="address" cols="30" rows="4"></textarea></div>
+            
+        </div>
+        <div><label>HOBBIES</label>
+        <div>  <input type="checkbox" name="c0" id="C" value="Reading">READING </div>
+        <div> <input type="checkbox" name="c1"  id="C" value="Writing">WRITING </div>
+        <div> <input type="checkbox" name="c2"  id="C" value="Playing">PLAYING </div>
+        <div> <input type="checkbox" name="c3"  id="C" value="Singing">SINGING </div>
+        <div> <input type="checkbox" name="c4"  id="C" value="Dancing">DANCING </div>
+        </div>
+
+       <div> <label >HIGHEST QUALIFICATION </label>
+        <div> <input type="radio" name="qualification" id="Q"  value="10">TENTH GRADE</div>
+        <div><input type="radio" name="qualification"   id="Q"  value="12">TWELTH GRADE </div>
+        <div> <input type="radio" name="qualification"  id="Q" value="grad">GRADUATION </div>
+        <div> <input type="radio" name="qualification"  id="Q" value="postgrad">POST GRADUATION </div>
+        <div><input type="radio" name="qualification"   id="Q" value="phd">Ph D </div>
+
+        </div>
+
+        <div>
+            <input type="button" value="Account create" onclick="myfun()" >
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
